@@ -1,13 +1,18 @@
-@import "roboto.scss";
+//connecting files
+@import "zeroing.scss";
+@import "fonts.scss";
+//variable declaration
+$roboto: 'Roboto', sans-serif;
+$nunito: 'Nunito', sans-serif;
 
-$robotoRegular: 'Roboto', sans-serif;
-
-body {
-    font-family: $robotoRegular;
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    font-family: $roboto;
     .container {
         padding-top: 2rem;
-        max-width: 1000px;
-        margin: 0 auto;
+        max-width: 1522px;
+        margin: 0px auto;
         h1 {
             text-align: center;
         }
@@ -19,4 +24,4 @@ body {
             margin: 0 auto;
         }
     }
-}
+} 
