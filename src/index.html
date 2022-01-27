@@ -8,11 +8,86 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <h1>WezomTest</h1>
-            <hr>
-            <div class="logo"></div>
-        </div>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__item1">
+                    <div class="header__logo">
+                        <svg id="header-logo" width="114" height="41" viewBox="0 0 114 41">
+                            <use xlink:href="assets/sprite.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <div class="header__catalog">
+                        <div class="catalog__menu">
+                            <div class="catalog__icon">
+                                <svg id="header-menu" width="29" height="23" viewBox="0 0 29 23">
+                                    <use xlink:href="assets/sprite.svg#menu"></use>
+                                </svg>
+                            </div>
+                            <div class="catalog__text">каталог</div>
+                        </div>
+                        <div class="catalog__categories">Все категории</div>
+                    </div>
+                </div>
+                <div class="header__item2">
+                    <div class="header__nav-bar">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="" class="menu__link">О Компании</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Гарантия</a></li>
+                            </ul>
+                        </nav>
+                        <div class="phone header__phone">
+                            <p>+38 068 000 00 00</p>
+                        </div>
+                    </div>
+                    <div class="header__search-box">
+                        <input class="header__search-txt" type="text" name="" placeholder="Поиск, например “тест”">
+                        <a class="header__search-button" href="#" >
+                            <svg id="header-search" width="19" height="18" viewBox="0 0 19 18">
+                                <use xlink:href="assets/sprite.svg#search"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__item3">
+                    <div class="header__site-management">
+                        <nav class="site-management__language">
+                            <ul class="site-management__list">
+                                <li class="site-management__item">Ua</li>
+                                <li class="site-management__item">Ru</li>
+                            </ul>
+                        </nav>
+                        <div class="site-management__account">
+                            <div class="site-management__text">Войти</div>
+                            <div class="site-management__image">
+                                <svg id="header-account" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="assets/sprite.svg#account"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__product-management">
+                        <div class="management-item product-management__item1">
+                            <svg id="header-balance" width="30" height="30" viewBox="0 0 30 30">
+                                <use xlink:href="assets/sprite.svg#balance"></use>
+                            </svg>
+                        </div>
+                        <div class="management-item product-management__item2">
+                            <svg id="header-heart" width="30" height="30" viewBox="0 0 30 30">
+                                <use xlink:href="assets/sprite.svg#heart"></use>
+                            </svg>
+                        </div>
+                        <div class="management-item product-management__item3">
+                            <svg id="header-shopping-cart" width="30" height="30" viewBox="0 0 30 30">
+                                <use xlink:href="assets/sprite.svg#shopping-cart"></use>
+                            </svg>
+                            <div class="product-management__counter">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
 </body>
 </html>
