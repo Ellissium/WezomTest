@@ -7,8 +7,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './index.js',
-        additional: './additional.js',
+        main: './scripts/main.js',
+        additional: './scripts/additional.js',
     },
     devtool: "eval-source-map",
     output: {

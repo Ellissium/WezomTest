@@ -11,15 +11,15 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__item1">
-                    <div class="header__logo">
-                        <svg id="header-logo" width="114" height="41" viewBox="0 0 114 41">
+                    <div class="logo header__logo">
+                        <svg id="header-logo" viewBox="0 0 114 41">
                             <use xlink:href="assets/sprite.svg#logo"></use>
                         </svg>
                     </div>
-                    <div class="header__catalog">
+                    <div class="catalog header__catalog">
                         <a class="catalog__menu" href="">
                             <div class="catalog__icon">
-                                <svg id="header-menu" width="29" height="23" viewBox="0 0 29 23">
+                                <svg id="header-menu" viewBox="0 0 29 23">
                                     <use xlink:href="assets/sprite.svg#menu"></use>
                                 </svg>
                             </div>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="header__item2">
                     <div class="header__nav-bar">
-                        <nav class="header__menu">
+                        <nav class="menu header__menu">
                             <ul class="menu__list">
                                 <li class="menu__item"><a class="menu__link" href="">О Компании</a></li>
                                 <li class="menu__item"><a class="menu__link" href="">Доставка и оплата</a></li>
@@ -42,14 +42,14 @@
                     <div class="header__search-box">
                         <input class="header__search-txt" type="text" name="" placeholder="Поиск, например “тест”">
                         <a class="header__search-button" href="" >
-                            <svg id="header-search" width="19" height="18" viewBox="0 0 19 18">
+                            <svg id="header-search" viewBox="0 0 19 18">
                                 <use xlink:href="assets/sprite.svg#search"></use>
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="header__item3">
-                    <div class="header__site-management">
+                    <div class="site-management header__site-management">
                         <nav class="site-management__language">
                             <ul class="site-management__list">
                                 <li class="site-management__item"><a href="">Ua</a></li>
@@ -59,25 +59,25 @@
                         <a class="site-management__account" href="">
                             <div class="site-management__text">Войти</div>
                             <div class="site-management__image">
-                                <svg id="header-account" width="20" height="20" viewBox="0 0 20 20">
+                                <svg id="header-account" viewBox="0 0 20 20">
                                     <use xlink:href="assets/sprite.svg#account"></use>
                                 </svg>
                             </div>
                         </a>
                     </div>
-                    <div class="header__product-management">
+                    <div class="product-management header__product-management">
                         <a class="management-item product-management__item1" href="">
-                            <svg id="header-balance" width="30" height="30" viewBox="0 0 30 30">
+                            <svg id="header-balance" viewBox="0 0 30 30">
                                 <use xlink:href="assets/sprite.svg#balance"></use>
                             </svg>
                         </a>
                         <a class="management-item product-management__item2" href="">
-                            <svg id="header-heart" width="30" height="30" viewBox="0 0 30 30">
+                            <svg id="header-heart" viewBox="0 0 30 30">
                                 <use xlink:href="assets/sprite.svg#heart"></use>
                             </svg>
                         </a>
                         <a class="management-item product-management__item3" href="">
-                            <svg id="header-shopping-cart" width="30" height="30" viewBox="0 0 30 30">
+                            <svg id="header-shopping-cart" viewBox="0 0 30 30">
                                 <use xlink:href="assets/sprite.svg#shopping-cart"></use>
                             </svg>
                             <div class="product-management__counter">3</div>
@@ -87,8 +87,52 @@
             </div>
         </header>
         <main class="page">
-            <div class="page__main-block">
-                <div class="container main-block__container">
+            <div class="container page__container">
+                <div class="page__main-block">
+                    <div class="page__product-path">Test — Каталог — Группа — Тестовый товар для верстки</div>
+                    <div class="page__product product">
+                        <div class="product__showcase">
+                            <div class="product__slider" onselectstart="return false" onmousedown="return false">
+                                <div class="product__prev">
+                                    <svg id="arrow-top" viewBox="0 0 29 16">
+                                        <use xlink:href="assets/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="product__thumbs">
+                                    <div class="product__thumb active">
+                                        <img class="product__image" src="./assets/product-img1.jpg" alt="product-image">
+                                    </div>
+                                    <div class="product__thumb">
+                                        <img  class="product__image" src="./assets/product-img2.jpg" alt="product-image">
+                                    </div>
+                                    <div class="product__thumb">
+                                        <img class="product__image" src="./assets/product-img3.jpg" alt="product-image">
+                                    </div>
+                                    <div class="product__thumb">
+                                        <img class="product__image" src="./assets/product-img4.jpg" alt="product-image">
+                                    </div>
+                                </div>
+                                <div class="product__next">
+                                    <svg id="arrow-bottom" viewBox="0 0 29 16">
+                                        <use xlink:href="assets/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product__main-image">
+                                <img class="product__big-image" src="./assets/product-img1.jpg" alt="product-image">
+                            </div>
+                        </div>
+                        <div class="product__management">
+                            1
+                           
+                            <!-- <div class="product__sale">afkj</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="page__description-block">
+                    
+                </div>
+                <div class="page__feedback-block">
                     <div class="block">afkj</div>
                     <div class="block">afkj</div>
                 </div>

@@ -2,7 +2,7 @@
   "name": "wezomtest",
   "version": "1.0.0",
   "description": "Industrial practice in Wezom",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "dev": "npx webpack --mode development",
     "build": "npx webpack --mode production",
