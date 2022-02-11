@@ -1,0 +1,120 @@
+.product__item3 {
+
+    .product__spoilers {
+
+        &._init {
+            .product__spoiler {
+               
+                .spoiler-title {
+                    display: flex;
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                    position: relative;
+                    cursor: pointer;
+                    padding: 10px 40px 10px 10px;
+                    z-index: 50;
+                    #arrow-bottom {
+                        z-index: 1;
+                        width: 10px;
+                        height: 10px;
+                        // transition: transform 0.3s ease 0s;
+                        transform: rotate(-180deg);
+                    }
+                   
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        height: 1px;
+                        background-color: $white;
+                        position: absolute;
+                        right: 10px;
+                        top: 20px;
+                        // transform: rotate(-30deg);
+                        // transition: transform 0.3s ease 0s;
+                    }
+                    &::after {
+                        content: "";
+                        width: 20px;
+                        height: 1px;
+                        background-color: $white;
+                        position: absolute;
+                        right: 10px;
+                        top: 20px;
+                        // transition: transform 0.3s ease 0s;
+                        // transform: rotate(-60deg);
+                    }
+                    &._active {
+                        #arrow-bottom {
+                            z-index: 1;
+                            width: 10px;
+                            height: 10px;
+                            // transition: transform 0.3s ease 0s;
+                            transform: rotate(0deg);
+                        }
+                        &::after {
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+                .spoiler-text{
+                    padding: 0 10px 10px;
+                    line-height: 130%;
+                }
+            }
+        }
+        .product__spoiler {
+            margin-bottom: 10px;
+            width: 587px;
+            color: $gray;
+        }
+
+        .warranty {
+            background: $red;
+            .warranty__title{
+               
+                
+            }
+            .warranty__title .warranty._init {
+
+            }
+            .warranty__text {
+               
+            }
+        }
+
+        .delivery-terms {
+            background: $yellow;
+            .delivery-terms__title {
+
+            }
+            .delivery-terms__text {
+
+            }
+        }
+
+        .payment-terms {
+            background: $green;
+            .payment-terms__title {
+
+            }
+            .payment-terms__text {
+
+            }
+        }
+
+    }
+    // .product__spoilers._init .warranty__title{
+        
+    // }
+    // .product__spoilers._init .warranty__title::before,
+    // .product__spoilers._init .warranty__title::after {
+        
+    // }
+    // .product__spoilers._init .warranty__title::after {
+    //     transform: rotate(-90deg);
+    // }
+    // .product__spoilers._init .warranty__title._active::after {
+    //     transform: rotate(0deg);
+    // }
+}

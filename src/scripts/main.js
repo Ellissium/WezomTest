@@ -1,4 +1,5 @@
 import ProductSlider from './components/product-slider';
+import ProductSpoilers from './components/product-spoilers';
 import vendor from './vendor/vendor';
 import Test from './test';
 import json from '../assets/json.json';

@@ -1,0 +1,40 @@
+.page__main-block {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    // background: paleturquoise;
+    min-height: 653px;
+    .page__product-path {
+        width: 100%;
+        padding: 20px 0px 20px 44px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        color: $darkBlue;
+        opacity: 0.5;
+    }
+    .page__product {
+        display: flex;
+        // min-width: 0;
+        width: 100%;
+        .product__showcase {
+            display: flex;
+        }
+        .product__management {
+            display: flex;
+            flex-direction: column;
+            .product__item1 {
+
+            }
+            .product__item2 {
+                
+            }
+            .product__item3 {
+                
+            }
+        }
+    }
+}
