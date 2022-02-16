@@ -8,7 +8,6 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './scripts/main.js',
-        additional: './scripts/additional.js',
     },
     devtool: "eval-source-map",
     output: {

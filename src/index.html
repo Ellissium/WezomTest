@@ -216,7 +216,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="product-management header__product-management">
+                    <div class="product-management header__product-management" onselectstart="return false" onmousedown="return false">
                         <a class="management-item product-management__item1" href="">
                             <svg id="header-balance" viewBox="0 0 30 30">
                                 <use xlink:href="assets/sprite.svg#balance"></use>
@@ -227,12 +227,32 @@
                                 <use xlink:href="assets/sprite.svg#heart"></use>
                             </svg>
                         </a>
-                        <a class="management-item product-management__item3" href="">
+                        <div class="management-item product-management__item3">
                             <svg id="header-shopping-cart" viewBox="0 0 30 30">
                                 <use xlink:href="assets/sprite.svg#shopping-cart"></use>
                             </svg>
                             <div class="product-management__counter">3</div>
-                        </a>
+                        </div>
+                        <div class="shoppingCard product-management__shoppingCard">
+                            <svg id="shopping-card" viewBox="0 0 338 278">
+                                <use xlink:href="assets/sprite.svg#shopping-card"></use>
+                            </svg>
+                            <div class="shoppingCard__main">
+                                <div class="shoppingCard__text">
+                                    В корзине <span class="shoppingCard__text-highlight">3 товара</span><br>
+                                    На сумму <span class="shoppingCard__text-highlight">30 000 ₴</span>
+                                </div>
+                                <a class="button-checkout shoppingCard__button-checkout" href="">
+                                    <span class="button-checkout__title-text">Оформить заказ</span>
+                                    <svg id="checkout-shopping-cart" viewBox="0 0 30 30">
+                                        <use xlink:href="assets/sprite.svg#shopping-cart"></use>
+                                    </svg>
+                                </a>
+                                <a class="button-edit shoppingCard__button-edit" href="">
+                                    <span class="button-edit__title-text">Редактировать заказ</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -446,7 +466,7 @@
                         <div class="reviews__title">
                             <div class="reviews__title-text">Отзывы покупателей</div>
                             <div class="reviews__title-counter">12</div>
-                            <a class="title-button reviews__title-button" href="">
+                            <div class="title-button reviews__title-button">
                                 <div class="title-button__title">
                                     <span class="title-button__title-text">Все отзывы</span>
                                 </div>
@@ -455,7 +475,7 @@
                                         <use xlink:href="assets/sprite.svg#spoiler-arrow"></use>
                                     </svg>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="reviews__items">
                             <div class="reviews__item">

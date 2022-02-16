@@ -3,6 +3,10 @@ vars.reviewsButton.addEventListener('click', (e) => {
     const ratings = document.querySelectorAll('.rating');
     initRatings();
 });
+vars.allReviewsButton.addEventListener('click', (e) => {
+    const ratings = document.querySelectorAll('.rating');
+    initRatings();
+});
 const ratings = document.querySelectorAll('.rating');
 
 if (ratings.length > 0) {
