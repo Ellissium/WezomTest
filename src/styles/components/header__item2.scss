@@ -1,0 +1,201 @@
+.header__item2 {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    width: calc(100% - 30px);
+    min-width: 242px;
+    font-weight: 700;
+    font-size: 18px;
+    color: $darkBlue;
+    margin: 0 15px;
+    .header__nav-bar {
+        display: none;
+        &._active {
+            display: flex;
+            position: absolute;
+            top: -10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 50;
+            width: 100%;
+            min-height: 25px;
+            margin-bottom: 14px;
+            .header__menu{
+                margin-left: 5px;
+                border-bottom: 1px solid $darkBlue;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                .menu__list {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .menu__item {
+                        margin-top: 4px;
+                        padding-bottom: 2px;
+                        border-bottom: 1px solid transparent;
+                        &:hover {
+                            color: $darkBlue;
+                            border-bottom: 1px solid $darkBlue;
+                            &:before {
+                                color: $green;
+                            }
+                        }
+                        &:active {
+                            color: $green;
+                            border-bottom: 1px solid $green;
+                        }
+                        &:before {
+                            content: "●";
+                            color: $darkBlue;
+                            padding-right: 9px;
+                        }
+                        &:not(:last-child) {
+                            margin-right: 7px;
+                        }
+                    }
+                    .menu__link {
+                        line-height: 171%;
+                    }
+                }
+            }
+            .header__phone {
+                margin-top: 1px;
+                min-width: 120px;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .header__search-box {
+        display: flex;
+        justify-content: space-between;
+        background: $lightGray;
+        height: 40px;
+        border-radius: 10px;
+        .header__search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            padding-left: 19px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            color: $gray;
+            opacity: 0.7;
+            width: calc(100% - 43px);
+        }
+        .header__search-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 12px;
+            &:hover {
+                border-radius: 10px;
+                background: rgba($darkBlue, 0.1);
+            }
+            &:active { 
+                border-radius: 10px;
+                background: rgba($darkBlue, .3);
+            }
+            #header-search {
+                width: 19px;
+                height: 18px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){ 
+    .header__item2 {
+        position: static;
+        width: 100%;
+        font-size: 14px;
+        color: $gray;
+        min-width: 482px;
+        margin: 0 14px 0 15px;
+        .header__nav-bar {
+            position: static;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+           
+            min-height: 25px;
+            margin-bottom: 14px;
+            .header__menu{
+                margin-left: 5px;
+                border-bottom: none;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                .menu__list {
+                    flex-wrap: wrap;
+                    display: flex;
+                    flex-direction: row;
+                    .menu__item {
+                        margin-top: 4px;
+                        padding-bottom: 2px;
+                        border-bottom: 1px solid transparent;
+                        &:hover {
+                            color: $darkBlue;
+                            border-bottom: 1px solid $darkBlue;
+                        }
+                        &:active {
+                            color: $green;
+                            border-bottom: 1px solid $green;
+                        }
+                        &:before {
+                            content: none;
+                        }
+                        &:not(:first-child) {
+                            &:before {
+                                content: "●";
+                                color: $lightGray;
+                                padding-right: 9px;
+                            }
+                        }
+                        &:not(:last-child) {
+                            margin-right: 7px;
+                        }
+                    }
+                    .menu__link {
+                        line-height: 171%;
+                    }
+                }
+            }
+            .header__phone {
+                margin-top: 1px;
+                min-width: 120px;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+@media (min-width: 1024px){ 
+    .header__item2 {
+        min-width: 545px;
+        .header__nav-bar {
+            min-height: 41px;
+            margin-bottom: 19px;
+        }
+        .header__search-box {
+            height: 50px;
+            margin: 24px 0 5px;
+        }
+    }
+}
+@media (min-width: 1280px){ 
+    .header__item2 {
+        min-width: 704px;
+    }
+}
+@media (min-width: 1552px){ 
+    .header__item2 {
+        width: 774px;
+        .header__search-box {
+            .header__search-txt {
+                width: 731px;
+            }
+        }
+    }
+}

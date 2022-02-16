@@ -51,14 +51,12 @@
         cursor: pointer;
         .specifications__button-title {
             margin-right: 6px;
-            
             .specifications__button-text {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 120%;
                 color: $darkBlue;
                 padding-bottom: 4px;
-                // border-bottom: 1px solid rgba($gray, .5);
             }
         }
         .specifications__button-arrow {
@@ -95,383 +93,31 @@
 @media (min-width: 768px){
     .page__specifications {
         width: 588px;
-        margin-top: 1px;
-        margin-left: 0px;
         padding-left: 12px;
         .specifications__title {
-            margin-bottom: 20px;
             font-size: 30px;
-            line-height: 120%;
-            color: $darkBlue;
-            .specifications__title-highlight {
-                color: $green;
-            }
         }
         .specifications__main-block {
-            display: flex;
-            flex-direction: column;
             width: 344px;
-            padding-bottom: 10px;
-            margin-bottom: 27px;
-            .specifications__params {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                margin-bottom: -2px;
-                border-bottom: 2px dotted $lightGray;
-                font-size: 16px;
-                line-height: 187%;
-                .specifications__type {
-                    position: relative;
-                    top: 12px;
-                    background: $white;
-                    font-weight: 500;
-                    color: $darkBlue;
-                }
-                .specifications__value-box {
-                    position: relative;
-                    top: 12px;
-                    height: 100%;
-                    width: 100px;
-                    background: $white;
-                    .specifications__value {
-                        text-align: left;
-                        color: $gray;
-                    }
-                }
-            }
-        }
-        .specifications__button {
-            display: flex;
-            cursor: pointer;
-            .specifications__button-title {
-                margin-right: 6px;
-                
-                .specifications__button-text {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 120%;
-                    color: $darkBlue;
-                    padding-bottom: 4px;
-                    // border-bottom: 1px solid rgba($gray, .5);
-                }
-            }
-            .specifications__button-arrow {
-                margin-top: 1px;
-                transform: rotate(-90deg);
-                #button-arrow {
-                    fill: $gray;
-                    width: 9px;
-                    height: 6px;
-                }
-            }
-            &:hover {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        border-bottom: 1px solid rgba($gray, .5);
-                    }
-                }
-            }
-            &:active {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        color: $green;
-                        border-bottom: 1px solid rgba($green, .5);
-                    }
-                }
-                .specifications__button-arrow {
-                    #button-arrow {
-                        fill: $green;
-                    }
-                }
-            }
         }
     }
 }
 @media (min-width: 1024px){
     .page__specifications {
         width: 344px;
-        margin-top: 1px;
-        margin-left: 0px;
         padding-left: 0px;
-        .specifications__title {
-            margin-bottom: 20px;
-            font-size: 30px;
-            line-height: 120%;
-            color: $darkBlue;
-            .specifications__title-highlight {
-                color: $green;
-            }
-        }
-        .specifications__main-block {
-            display: flex;
-            flex-direction: column;
-            width: 344px;
-            padding-bottom: 10px;
-            margin-bottom: 27px;
-            .specifications__params {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                margin-bottom: -2px;
-                border-bottom: 2px dotted $lightGray;
-                font-size: 16px;
-                line-height: 187%;
-                .specifications__type {
-                    position: relative;
-                    top: 12px;
-                    background: $white;
-                    font-weight: 500;
-                    color: $darkBlue;
-                }
-                .specifications__value-box {
-                    position: relative;
-                    top: 12px;
-                    height: 100%;
-                    width: 100px;
-                    background: $white;
-                    .specifications__value {
-                        text-align: left;
-                        color: $gray;
-                    }
-                }
-            }
-        }
-        .specifications__button {
-            display: flex;
-            cursor: pointer;
-            .specifications__button-title {
-                margin-right: 6px;
-                
-                .specifications__button-text {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 120%;
-                    color: $darkBlue;
-                    padding-bottom: 4px;
-                    // border-bottom: 1px solid rgba($gray, .5);
-                }
-            }
-            .specifications__button-arrow {
-                margin-top: 1px;
-                transform: rotate(-90deg);
-                #button-arrow {
-                    fill: $gray;
-                    width: 9px;
-                    height: 6px;
-                }
-            }
-            &:hover {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        border-bottom: 1px solid rgba($gray, .5);
-                    }
-                }
-            }
-            &:active {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        color: $green;
-                        border-bottom: 1px solid rgba($green, .5);
-                    }
-                }
-                .specifications__button-arrow {
-                    #button-arrow {
-                        fill: $green;
-                    }
-                }
-            }
-        }
     }
 }
 @media (min-width: 1280px){
     .page__specifications {
         width: 588px;
-        margin-top: 1px;
-        margin-left: 0px;
-        .specifications__title {
-            margin-bottom: 20px;
-            font-size: 30px;
-            line-height: 120%;
-            color: $darkBlue;
-            .specifications__title-highlight {
-                color: $green;
-            }
-        }
         .specifications__main-block {
-            display: flex;
-            flex-direction: column;
             width: 344px;
-            padding-bottom: 10px;
-            margin-bottom: 27px;
-            .specifications__params {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                margin-bottom: -2px;
-                border-bottom: 2px dotted $lightGray;
-                font-size: 16px;
-                line-height: 187%;
-                .specifications__type {
-                    position: relative;
-                    top: 12px;
-                    background: $white;
-                    font-weight: 500;
-                    color: $darkBlue;
-                }
-                .specifications__value-box {
-                    position: relative;
-                    top: 12px;
-                    height: 100%;
-                    width: 100px;
-                    background: $white;
-                    .specifications__value {
-                        text-align: left;
-                        color: $gray;
-                    }
-                }
-            }
-        }
-        .specifications__button {
-            display: flex;
-            cursor: pointer;
-            .specifications__button-title {
-                margin-right: 6px;
-                
-                .specifications__button-text {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 120%;
-                    color: $darkBlue;
-                    padding-bottom: 4px;
-                    // border-bottom: 1px solid rgba($gray, .5);
-                }
-            }
-            .specifications__button-arrow {
-                margin-top: 1px;
-                transform: rotate(-90deg);
-                #button-arrow {
-                    fill: $gray;
-                    width: 9px;
-                    height: 6px;
-                }
-            }
-            &:hover {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        border-bottom: 1px solid rgba($gray, .5);
-                    }
-                }
-            }
-            &:active {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        color: $green;
-                        border-bottom: 1px solid rgba($green, .5);
-                    }
-                }
-                .specifications__button-arrow {
-                    #button-arrow {
-                        fill: $green;
-                    }
-                }
-            }
         }
     }
 }
 @media (min-width: 1552px){
     .page__specifications {
-        width: 588px;
-        margin-top: 1px;
         margin-left: 162px;
-        .specifications__title {
-            margin-bottom: 20px;
-            font-size: 30px;
-            line-height: 120%;
-            color: $darkBlue;
-            .specifications__title-highlight {
-                color: $green;
-            }
-        }
-        .specifications__main-block {
-            display: flex;
-            flex-direction: column;
-            width: 344px;
-            padding-bottom: 10px;
-            margin-bottom: 27px;
-            .specifications__params {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                margin-bottom: -2px;
-                border-bottom: 2px dotted $lightGray;
-                font-size: 16px;
-                line-height: 187%;
-                .specifications__type {
-                    position: relative;
-                    top: 12px;
-                    background: $white;
-                    font-weight: 500;
-                    color: $darkBlue;
-                }
-                .specifications__value-box {
-                    position: relative;
-                    top: 12px;
-                    height: 100%;
-                    width: 100px;
-                    background: $white;
-                    .specifications__value {
-                        text-align: left;
-                        color: $gray;
-                    }
-                }
-            }
-        }
-        .specifications__button {
-            display: flex;
-            cursor: pointer;
-            .specifications__button-title {
-                margin-right: 6px;
-                
-                .specifications__button-text {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 120%;
-                    color: $darkBlue;
-                    padding-bottom: 4px;
-                    // border-bottom: 1px solid rgba($gray, .5);
-                }
-            }
-            .specifications__button-arrow {
-                margin-top: 1px;
-                transform: rotate(-90deg);
-                #button-arrow {
-                    fill: $gray;
-                    width: 9px;
-                    height: 6px;
-                }
-            }
-            &:hover {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        border-bottom: 1px solid rgba($gray, .5);
-                    }
-                }
-            }
-            &:active {
-                .specifications__button-title {
-                    .specifications__button-text {
-                        color: $green;
-                        border-bottom: 1px solid rgba($green, .5);
-                    }
-                }
-                .specifications__button-arrow {
-                    #button-arrow {
-                        fill: $green;
-                    }
-                }
-            }
-        }
     }
-  
 }
