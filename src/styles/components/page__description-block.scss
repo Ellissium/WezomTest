@@ -1,5 +1,9 @@
 .page__description-block {
-    z-index: 50;
-    background: $yellow;
-    min-height: 602px;
+    display: flex;
+    z-index: 2;
+    background: $white;
+    min-height: 560px;
+    width: 100%;
+    padding-top: 17px;
+    margin-bottom: 38px;
 }

@@ -90,7 +90,7 @@ function setSpoilerAction(e) {
         const oneSpoiler = spoilersBlock.hasAttribute('data-one-spoiler') ? true: false;
         if (!spoilersBlock.querySelectorAll('._slide').length) {
             if (oneSpoiler && !spoilerTitle.classList.contains('_active')) {
-                hideSpoilersBody(spoilersBlock);
+                hideSpoilerBody(spoilersBlock);
             }
             spoilerTitle.classList.toggle('_active');
             _slideToggle(spoilerTitle.nextElementSibling, 500);
