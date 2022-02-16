@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "npx webpack --mode development",
     "build": "npx webpack --mode production",
-    "watch": "npx webpack --mode development --watch"
+    "watch": "npx webpack --mode development --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,13 +19,14 @@
   "bugs": {
     "url": "https://github.com/Ellissium/WezomTest/issues"
   },
-  "homepage": "https://github.com/Ellissium/WezomTest#readme",
+  "homepage": "http://Ellissium/github.io/WezomTest",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.2",
     "sass": "^1.48.0",
